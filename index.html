@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="icon" type="image/png" href="favicon.png"/>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="FileSaver.js"></script>
+<script src="xlsx.full.min.js"></script>
+<title>CSV converter</title>
+</head>
+
+<body>
+<div id="drop-area">
+  <form class="my-form">
+    <p>Upload file with the file dialog or by dragging and dropping onto the dashed region</p>
+    <input type="file" id="fileElem" multiple accept=".xlsx,.csv" onchange="handleFiles(this.files)">
+    <label class="button" for="fileElem">Select files</label>
+	<p id = "showresult"></p>
+  </form>
+</div>
+<script src="loader.js"></script>
+</body>
+</html>
